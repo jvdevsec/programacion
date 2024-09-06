@@ -1,0 +1,15 @@
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.AssemblyInfoInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.AssemblyInfo.cs
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.csproj.CoreCompileInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.sourcelink.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\bin\Debug\net8.0\FundamentosDeProgramación.exe
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\bin\Debug\net8.0\FundamentosDeProgramación.deps.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\bin\Debug\net8.0\FundamentosDeProgramación.runtimeconfig.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\bin\Debug\net8.0\FundamentosDeProgramación.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\bin\Debug\net8.0\FundamentosDeProgramación.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\refint\FundamentosDeProgramación.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\FundamentosDeProgramación.genruntimeconfig.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad1-VariablesConstantesEstructurasdeControl\obj\Debug\net8.0\ref\FundamentosDeProgramación.dll
