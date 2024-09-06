@@ -50,7 +50,7 @@ namespace VariablesConstantesEstructurasdeControl
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Presión válida: " + presion + " psi"); // Si la entrada es válida se muestra el mensaje de confirmación
+                Console.WriteLine("Presión válida: " + presion + " psi"); // Si la entrada es válida se muestra el mensaje de confirmación:
                 Console.ForegroundColor = ConsoleColor.Gray;
 
             }
