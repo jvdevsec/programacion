@@ -75,7 +75,7 @@ namespace VariablesConstantesEstructurasdeControl
         }
         public void evaluarAlarma(double presion, double temperaturaEnGradosCelsius)
         {
-            if (presion  >= 35 || (temperaturaEnGradosCelsius > 75 && temperaturaEnGradosCelsius < 95))
+            if (presion >= 35 || (temperaturaEnGradosCelsius > 75 && temperaturaEnGradosCelsius < 95))
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Alarma Encendida");
