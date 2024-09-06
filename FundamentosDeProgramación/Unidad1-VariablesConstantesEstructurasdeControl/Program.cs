@@ -39,7 +39,7 @@ namespace VariablesConstantesEstructurasdeControl
             Console.WriteLine("Ingresa la cantidad de libras por pulgada cuadrada (psi):");
             string? inputLibras = Console.ReadLine(); 
             double presion; // el tipo de dato 'double' tiene más precision que 'float', en el caso de que se ingresen decimales
-            if (!double.TryParse(inputLibras, out presion) || presion <= 0) // Convierte la entrada del usuario en un valor 'double' y válida la entrada
+            if (!double.TryParse(inputLibras, out presion) || presion <= 0) // El operador '!' niega el resultado por lo que la condición se evalúa como true si la conversión falla y false si la conversión se realiza
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("ERROR - Por favor ingresa un valor válido, no se permiten caracteres, cadenas de texto ni números negativos"); // Si la conversión falla o el valor es inválido se muestra el mensaje de error
@@ -68,14 +68,14 @@ namespace VariablesConstantesEstructurasdeControl
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Temperatura válida: " + temperaturaEnGradosCelsius + " C°"); // Si la entrada es válida se muestra el mensaje de confirmación
+                Console.WriteLine("Temperatura válida: " + temperaturaEnGradosCelsius + " C°"); 
                 Console.ForegroundColor = ConsoleColor.Gray;
                 evaluarAlarma(presion, temperaturaEnGradosCelsius);
             }
         }
         public void evaluarAlarma(double presion, double temperaturaEnGradosCelsius)
         {
-            if (presion >= 35 || (temperaturaEnGradosCelsius > 75 && temperaturaEnGradosCelsius < 95))
+            if (presion >= 35 || (temperaturaEnGradosCelsius > 75 && temperaturaEnGradosCelsius < 95)) // 
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Alarma Encendida");
