@@ -21,11 +21,19 @@ namespace ArreglosBidimiensonales
     {
         public static void Main(string[] args)
         {
+            Console.ForegroundColor=ConsoleColor.Magenta;
+            Console.WriteLine(@"
+            
+             __  __       _        _         ____  ____  
+            |  \/  | __ _| |_ _ __(_)____   |___ \|  _ \ 
+            | |\/| |/ _` | __| '__| |_  /     __) | | | |
+            | |  | | (_| | |_| |  | |/ /     / __/| |_| |
+            |_|  |_|\__,_|\__|_|  |_/___|   |_____|____/ 
+            ");
+            Console.ResetColor();
             // Matriz 4x4
             int [,] numeros = new int[4,4];
-            Console.WriteLine(numeros.Length);
             Console.WriteLine("Ingresa los numeros para la matriz");
- 
             // Bucles anidados para ingresar los 
             for (int x = 0; x < numeros.GetLength(0); x++) // E
             {

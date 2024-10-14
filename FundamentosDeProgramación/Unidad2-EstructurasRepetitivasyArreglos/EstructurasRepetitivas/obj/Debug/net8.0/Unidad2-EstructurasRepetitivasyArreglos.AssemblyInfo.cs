@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Unidad2-EstructurasRepetitivasyArreglos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a89aa59ba8131d8b93c1bf1457afbdc1cf70d13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8644e5c5904515887abc94da1d5bf1ca9a712651")]
 [assembly: System.Reflection.AssemblyProductAttribute("Unidad2-EstructurasRepetitivasyArreglos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Unidad2-EstructurasRepetitivasyArreglos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
