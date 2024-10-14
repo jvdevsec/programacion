@@ -25,17 +25,17 @@ namespace ArreglosBidimiensonales
             int [,] numeros = new int[4,4];
             Console.WriteLine(numeros.Length);
             Console.WriteLine("Ingresa los numeros para la matriz");
-
+ 
             // Bucles anidados para ingresar los 
-            for (int x = 0; x < 4; x++)
+            for (int x = 0; x < numeros.GetLength(0); x++) // E
             {
-                for (int y = 0; y < 4; y++)
+                for (int y = 0; y < numeros.GetLength(1); y++) 
                 {
                     while(true)
                     {
                         Console.WriteLine($"Ingrese un valor para la fila {x+1} y la columna {y+1}: ");
                         string? entradaUsuario = Console.ReadLine();
-                        if (int.TryParse(entradaUsuario, out int numero) && numero >= 3 && numero <= 6) // Validar la entrada del usuario - 
+                        if (int.TryParse(entradaUsuario, out int numero) && numero >= 3 && numero <= 6) // Validar la entrada del usuario - numeros entre 3 y 6, tampoco se permiten datos de tipo string
                         {
                             numeros[x,y] = numero;
                             break;
@@ -52,9 +52,9 @@ namespace ArreglosBidimiensonales
             Console.WriteLine();
             Console.WriteLine("Matriz 4x4:");
             // Mostrar en la consola el arreglo - Se usan bucles for anidados para recorrer los elementos del arreglo bidimensional
-            for(int x = 0; x < 4; x++)
+            for(int x = 0; x < numeros.GetLength(0); x++)
             {
-                for(int y = 0; y < 4; y++)
+                for(int y = 0; y < numeros.GetLength(1); y++)
                 {
                     Console.ForegroundColor=ConsoleColor.DarkGreen;
                     Console.Write(numeros[x,y] + " ");
