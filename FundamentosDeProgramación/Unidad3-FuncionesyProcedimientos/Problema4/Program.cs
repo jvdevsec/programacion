@@ -64,7 +64,7 @@ namespace FuncionesyProcedimientos1
                     Console.WriteLine("Advertencia - No se se admiten carácteres especiales");
                     Console.ResetColor();
                 }
-                else if(radioCirculo < 1 || radioCirculo > 1000) // el rango de numeros que se puede ingresar
+                else if(radioCirculo < 1 || radioCirculo > 999999999999999) // el rango de numeros que se puede ingresar
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("¡ERROR! - El valor ingresado para el radio no es válido");

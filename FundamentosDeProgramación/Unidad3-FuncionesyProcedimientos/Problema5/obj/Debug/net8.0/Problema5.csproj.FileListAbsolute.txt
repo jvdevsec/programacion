@@ -1,0 +1,15 @@
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\bin\Debug\net8.0\Problema5.exe
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\bin\Debug\net8.0\Problema5.deps.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\bin\Debug\net8.0\Problema5.runtimeconfig.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\bin\Debug\net8.0\Problema5.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\bin\Debug\net8.0\Problema5.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.AssemblyInfoInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.AssemblyInfo.cs
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.csproj.CoreCompileInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.sourcelink.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\refint\Problema5.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\Problema5.genruntimeconfig.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Unidad3-FuncionesyProcedimientos\Problema5\obj\Debug\net8.0\ref\Problema5.dll
