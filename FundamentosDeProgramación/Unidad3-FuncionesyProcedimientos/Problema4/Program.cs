@@ -61,7 +61,7 @@ namespace FuncionesyProcedimientos1
                 {
                     // el operador '!' significa negación. Si la conversión falla se muestra el mensaje de error
                     Console.ForegroundColor = ConsoleColor.Yellow; 
-                    Console.WriteLine("Advertencia - No se se admiten carácteres especiales");
+                    Console.WriteLine("Advertencia - No se admiten carácteres especiales");
                     Console.ResetColor();
                 }
                 else if(radioCirculo < 1 || radioCirculo > float.MaxValue) // el rango de numeros que se puede ingresar
