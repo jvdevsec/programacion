@@ -1,0 +1,15 @@
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.AssemblyInfoInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.AssemblyInfo.cs
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.csproj.CoreCompileInputs.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.sourcelink.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\refint\Fase4-POA.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\bin\Debug\net9.0\Fase4-POA.exe
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\bin\Debug\net9.0\Fase4-POA.deps.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\bin\Debug\net9.0\Fase4-POA.runtimeconfig.json
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\bin\Debug\net9.0\Fase4-POA.dll
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\bin\Debug\net9.0\Fase4-POA.pdb
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\Fase4-POA.genruntimeconfig.cache
+C:\Users\winbl0ws\Documents\UniversidadC#\FundamentosDeProgramación\Fase4-POA\obj\Debug\net9.0\ref\Fase4-POA.dll

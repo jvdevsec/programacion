@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pQ1v46xA3as=",
+  "dgSpecHash": "4GQtDwghOQE=",
   "success": true,
   "projectFilePath": "C:\\Users\\winbl0ws\\Documents\\UniversidadC#\\FundamentosDeProgramación\\Unidad3-FuncionesyProcedimientos\\Problema5\\Problema5.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\winbl0ws\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\winbl0ws\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\winbl0ws\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\winbl0ws\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
