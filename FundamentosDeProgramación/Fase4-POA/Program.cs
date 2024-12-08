@@ -4,6 +4,10 @@ Grupo: 213022A_1704
 Programa: Ingeniería de Sistemas
 Código Fuente: Autoría Propia
 
+Estructuras de control usadas: bucles for y while, switch-case 
+metodos utilizados: diferentes metodos de consola. de conversion, de formateo, metodos de array/matrices
+y metodos propios definidos en el código.
+
 Problema #1:
 Una universidad requiere analizar el proceso de matrícula para
 el tercer período académico del 2020 de cada uno de los estudiantes. La
@@ -243,7 +247,7 @@ namespace POA
             Console.WriteLine($"Valor Neto Total (con descuentos):                        ${totalFinal:N0}");
             TotalCreditosInscritosPeriodo(); // Invoco a la función para mostrar el total de creditos inscritos 
         }
-        // Esta fucnión calcula los descuentos individuales para cada carrera
+        // Esta función calcula los descuentos individuales para cada carrera
         static int CalcularDescuentoIndividual(string nombreCarrera, int valorOriginal)
         {
             // Ejemplos de reglas de descuento
