@@ -21,11 +21,12 @@ programación debe mostrar los siguientes resultados:
 estudiantes.
 • Valor neto de las inscripciones del primer semestre del 2020.
 */
+using System;
 namespace POA
 {
     public class Program
     {
-        public const int VALOR_CREDITO_ACADEMICO = 200000;
+        public const int VALOR_CREDITO_ACADEMICO = 200000; // valor credito academico
         private static string [,] carrerasYCreditos= 
         {
             {"Ingeniería Sistemas", "20"},
@@ -50,7 +51,6 @@ namespace POA
             }
             MostrarTotalEstudiantesPorCarrera();
             MostrarCreditosPeriodoAcademico();
-            CalcularValorCarrera(VALOR_CREDITO_ACADEMICO);
             CalcularDescuentos(VALOR_CREDITO_ACADEMICO);
         }
         static int SolicitarNumeroEstudiantes()
@@ -63,7 +63,7 @@ namespace POA
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Error - no se permiten caracteres especiales");
-                    Console.ResetColor();
+                    Console.ResetColor(); // !"#!"#
                     continue;
                 }
                 if (totalEstudiantes < 1 || totalEstudiantes > 100)
@@ -125,13 +125,6 @@ namespace POA
                 5 => ++contadorAdministracionEmpresas,
                 _ => 0,
             };
-            /*switch (carreraSeleccionada)
-            {
-            case 1:
-                return ++contadorIngenieriaSistemas;
-            case 2: 
-            }
-            */
         }
         static void MostrarTotalEstudiantesPorCarrera()
         {
@@ -176,7 +169,7 @@ namespace POA
         {
             int[] contadoresEstudiantes = [contadorIngenieriaSistemas, contadorPsicologia, contadorEconomia, contadorComunicacionSocial, contadorAdministracionEmpresas];
             int totalCreditos = 0;
-            for (int i = 0; i < carrerasYCreditos.GetLength(0); i++)
+            for (int i = 0; i < carrerasYCreditos.GetLength(0); i++) // 0,1,2,3,4 index/indice
             {
                 int creditos = int.Parse(carrerasYCreditos[i, 1]);
                 totalCreditos += contadoresEstudiantes[i] * creditos;
@@ -198,23 +191,6 @@ namespace POA
             return valoresPorCarrera[4];
         }*/
 
-        static int[] CalcularValorCarrera(int VALOR_CREDITO_ACADEMICO)
-        {
-            int[] valoresCarreras = new int[carrerasYCreditos.GetLength(0)];
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("\nCosto del Semestre sin Descuento");
-            Console.ResetColor();
-            for (int i = 0; i < carrerasYCreditos.GetLength(0); i++)
-            {
-                string nombreCarrera = carrerasYCreditos[i, 0];
-                int creditos = int.Parse(carrerasYCreditos[i, 1]);
-        
-                int valorCarrera = VALOR_CREDITO_ACADEMICO * creditos;
-        
-                Console.WriteLine($"{nombreCarrera}: ${valorCarrera:N0}");
-            }
-            return valoresCarreras;
-        }
         static void CalcularDescuentos(int VALOR_CREDITO_ACADEMICO)
         {
             // Arreglos para almacenar los valores
