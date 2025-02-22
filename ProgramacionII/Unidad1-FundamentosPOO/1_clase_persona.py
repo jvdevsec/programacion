@@ -1,11 +1,14 @@
 """
-Añadir un método en la clase Persona llamado presentarse, que
+*Añadir un método en la clase Persona llamado presentarse, que
 imprima una presentación usando el nombre y edad de la persona.
+
+*El codigo para este ejercicio quise hacerlo mas robusto con
+validaciones de entrada y manejo de errores con bloques try-except
 """
 import sys # Importacion del modulo sys - Se va a hacer uso de la funcion .exit() para interrumpir el programa
 
 class Persona:
-    def _init_(self, nombre, edad): # Constructor 
+    def __init__(self, nombre, edad): # Constructor - "_" el guion bajo indica que es privado
         self.nombre = nombre
         self.edad = edad
     # Metodo para la entrada de datos y personalizar el mensaje de presentacion
@@ -40,7 +43,7 @@ class Persona:
     def presentarse(self):
         print(f"\nHola, mi nombre es {self.nombre} y tengo {self.edad} años (°▽°)/")
 
-# Salidas - Llamada a las funciones
-persona = Persona()
+# Uso de la clase Persona -> instancia
+persona = Persona("", 0)
 persona.ingresar_datos()
 persona.presentarse()
