@@ -19,7 +19,7 @@ class Gerente(Empleado):
 
     def calcular_salario(self):
         return  self.valor_hora * self.numero_horas
-
+# Subclase Vendedor
 class Vendedor:
       def __init__(self, numero_horas, valor_hora): # 
         self.numero_horas = numero_horas
