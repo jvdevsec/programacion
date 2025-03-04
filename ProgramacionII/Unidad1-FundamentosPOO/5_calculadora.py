@@ -33,16 +33,19 @@ class Calculadora:
     def multiplicar(self):
         print(f"\nLa multiplicacion de ambos numeros es {self.primer_numero * self.segundo_numero}\b")
 
-    def convertir_a_entero(self):
-        self.primer_numero = float(input("Ingresa el numero decimal: "))
-        numero_convertido = trunc(self.primer_numero) # Descartando la parte decimal
-        numero_truncado = ceil(self.primer_numero) # Redondeando al entero mas cercano
-        print(f"Convertido a entero: {numero_convertido}\nTruncado al entero mas cercano: {numero_truncado}")
+    # Metodo estatico - no es necesario pasar el parametro self ni tampoco crear una instancia de la clase
+    @staticmethod # Decorador para definir un metodo como metodo estatico
+    def convertir_a_entero():
+        primer_numero = float(input("Ingresa el numero decimal: "))
+        numero_convertido = trunc(primer_numero) # Descartando la parte decimal
+        numero_truncado = ceil(primer_numero) # Redondeando al entero mas cercano
+        return print(f"Convertido a entero: {numero_convertido}\nTruncado al entero mas cercano: {numero_truncado}")
     # Este metodo imprime el menu y maneja la seleccion de opciones
     def menu(self): 
         while(True):
             # Menu
             print("\n--Calculadora--\nSeleccione una opcion(1-5)\n1-Sumar\n2-Restar\n3-Multiplicar\n4-Convertir decimal a entero\n5-SALIR")
+            # Bloque try-catch para manejo de errores cuando se interrumpe la ejecucion del programa 
             try:
                 opcion_seleccionada = (input("> ")) # Se almacena el valor ingresado
                  # Dependiendo del valor ingresado se llama al metodo
@@ -64,9 +67,11 @@ class Calculadora:
                     case _:
                         print("\nValor no permitido, ingresa numeros de 1-5")
             except EOFError:
-                print("\nEjecucion cancelada (×_×)\n")
+                print("\nEjecucion cancelada (×_×)\n") # ctrl+d
                 exit() # sale del programa
-
+            except KeyboardInterrupt: # ctrl+c
+                print("\n\nEjecucion cancelada (×_×)\n")
+                exit() 
 # Instancia de la clase          
 calculadora = Calculadora()
 calculadora.menu()
