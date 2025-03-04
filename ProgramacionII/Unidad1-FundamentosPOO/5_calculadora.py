@@ -45,7 +45,7 @@ class Calculadora:
         while(True):
             # Menu
             print("\n--Calculadora--\nSeleccione una opcion(1-5)\n1-Sumar\n2-Restar\n3-Multiplicar\n4-Convertir decimal a entero\n5-SALIR")
-            # Bloque try-catch para manejo de errores cuando se interrumpe la ejecucion del programa 
+            # Bloque try-except para manejo de errores cuando se interrumpe la ejecucion del programa 
             try:
                 opcion_seleccionada = (input("> ")) # Se almacena el valor ingresado
                  # Dependiendo del valor ingresado se llama al metodo
