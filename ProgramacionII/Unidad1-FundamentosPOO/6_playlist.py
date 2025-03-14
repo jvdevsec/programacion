@@ -21,7 +21,7 @@ class Playlist:
         atributos = ["titulo", "artista", "duracion"] # lista
         cancion = {} # Diccionario para almacenar las canciones
         try:
-            for atributo in atributos: # El bucler recorre nuestra lista de atributos
+            for atributo in atributos: # El bucle recorre nuestra lista de atributos
                 if atributo == "duracion": # Condicion unica para el atributo 'duracion'
                     while(True):
                         try:
