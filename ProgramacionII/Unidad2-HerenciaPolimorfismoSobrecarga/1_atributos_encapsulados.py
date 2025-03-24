@@ -23,8 +23,8 @@ class Persona:
 
 # Subclase Trabajador
 class Trabajador(Persona):
-    def __init__(self, salario):
-        super().__init__()
+    def __init__(self, salario, nombre, edad):
+        super().__init__(nombre, edad)
         self.__salario = salario
 
     # Metodo getter 
@@ -34,19 +34,18 @@ class Trabajador(Persona):
         
     @staticmethod
     def main():
-        print("SALARIO EMPLEADO")
+        print("\nSALARIO EMPLEADO")
         while(True):
             print(f"Selecciona una opcion:\n1-Ver salario\n2-Modificar Salario")
             try:
                 respuesta_usuario = input(">: ")
                 if respuesta_usuario == "1":
-                    Trabajador.get_salario()
-                    print("")
+                    print(f"Salario del empleado: {Trabajador.get_salario(0)}")
                 else:
                     print("")
             except EOFError:
-                print("\nEjecucion terminada, saliendo del programa...")
+                print("\nEjecucion terminada, saliendo del programa...\n")
                 break
 
-empleado = Trabajador()
+empleado = Trabajador(0,0,0)
 empleado.main()
