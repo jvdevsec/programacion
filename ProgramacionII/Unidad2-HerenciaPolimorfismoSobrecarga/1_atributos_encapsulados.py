@@ -22,7 +22,11 @@ class Persona:  # Se inicializa la clase Persona
 
 class Trabajador(Persona):  # Subclase Trabajador
     def __init__(self, nombre, edad, salario):
-        super().__init__(nombre, edad)  # funcion super()
+        """
+        la funcion super() - se usa en una clase hija para que herede
+        los atributos y metodos de la clase padre (o superclase)
+        """
+        super().__init__(nombre, edad)
         self.__salario = salario
 
     def get_salario(self):  # Metodo getter
