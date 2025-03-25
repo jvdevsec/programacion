@@ -7,10 +7,16 @@ prueba sus métodos únicos.
 """
 
 
-class Vehiculo:
+class Vehiculo:  # Clase Padre o Superclase
     def __init__(self):
+        """
+        Uso la palabra reservada 'pass' para definir una clase
+        sin los atributos implementados para el desarrollo del
+        ejercico
+        """
         pass
 
+    # Metodos de instancia
     def arrancar(self):
         print("El vehiculo arranca...")
 
@@ -35,6 +41,10 @@ class Moto(Vehiculo):
 
 
 if __name__ == "__main__":
+    """
+    Aqui tenemos un buen ejemplo de herencia, es mejor escribir
+    el codigo una vez y reutilizarlo:
+    """
     # Instancia de Coche
     print("--Coche--")
     volkswagen = Coche()
