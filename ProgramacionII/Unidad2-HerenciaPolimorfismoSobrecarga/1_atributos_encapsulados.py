@@ -5,9 +5,8 @@ __edad. Crea una subclase Trabajador que añada un atributo
 __salario. Agrega métodos para obtener y modificar el salario de
  manera segura.
 
-Empezare a usar la nomenclatura PEP 8 para formatear el codigo
-
-(ツ)
+Se usa la nomenclatura PEP 8 para formatear el codigo
+- Juan Valdes(ツ)
 """
 
 
@@ -23,12 +22,12 @@ class Persona:  # Se inicializa la clase Persona
 
 class Trabajador(Persona):  # Subclase Trabajador
     def __init__(self, nombre, edad, salario):
-        super().__init__(nombre, edad)
+        super().__init__(nombre, edad)  # funcion super()
         self.__salario = salario
 
     def get_salario(self):  # Metodo getter
         """
-        Retorna el valor pasado como parametro en la instancia de la clase
+        Retorna el valor pasado como argumento en la instancia de la clase
         (cuando creamos el objeto)
         """
         return self.__salario
@@ -42,32 +41,55 @@ class Trabajador(Persona):  # Subclase Trabajador
             try:
                 nuevo_salario = int(
                     input("Ingresa el nuevo salario para el empleado: "))
-                self.__salario = nuevo_salario
-                print("\nSalario actualizado\n")
-                return
+                # Se verifica que no se ingresen valores negativo
+                if nuevo_salario <= 0:
+                    print("Valor no valido, ¡ingresa cantidades mayores a 0!")
+                else:
+                    self.__salario = nuevo_salario
+                    print("\nSalario actualizado\n")
+                    return self.__salario
             except ValueError:
-                print("Valor no permitido, intenta nuevamente")
+                print("\nValor no permitido, intenta nuevamente\n")
+            except EOFError:
+                print("\nEjecucion terminada... x_x\n")
+                exit()
+            except KeyboardInterrupt:
+                print("\nEjecucion terminada... x_x\n")
+                exit()
 
 
+# Esta condición simplemente hace una consulta para verificar
+# si el archivo que se está ejecutando es el archivo principal
+# No es obligatorio, pero es una buena práctica para separar
+# la definición de las clases con la lógica de ejecución
 if __name__ == "__main__":
     # Aqui se crea la instancia de la subclase trabajador
     # con algunos valores iniciales
-    empleado = Trabajador("J", 30, 1423500)
+    empleado = Trabajador(None, None, 1423500)
     print("\nSALARIO EMPLEADO")
     while (True):
+        # Menu para interactuar con el usuario
         print("\nSelecciona una opcion:")
         print("1)Ver salario")
         print("2)Modificar Salario")
         print("3)SALIR")
+        # Un bloque try-except para el manejo de errores
+        # interrupciones de teclado: ctrl + d / ctrl + c
         try:
             respuesta_usuario = input(">: ")
+            # Se validan las entradas del usuario
             if respuesta_usuario == "1":
                 print(f"Salario del empleado: ${empleado.get_salario()} pesos")
             elif respuesta_usuario == "2":
                 empleado.set_salario()
-            else:
+            elif respuesta_usuario == "3":
                 print("\nSaliste del programa...")
-                exit()
+                break
+            else:
+                (print("\nOpcion invalida. Selecciona 1, 2 o 3 (￣︿￣)\n"))
         except EOFError:
-            print("\nEjecucion terminada, saliendo del programa...\n")
+            print("\nEjecucion terminada... x_x\n")
+            exit()
+        except KeyboardInterrupt:
+            print("\nEjecucion terminada.. x_x\n")
             exit()
