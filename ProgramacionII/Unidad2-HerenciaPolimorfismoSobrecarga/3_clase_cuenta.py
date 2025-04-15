@@ -38,6 +38,10 @@ class CuentaAhorro(Cuenta):  # Subclase
         'self.__saldo'
         """
         calculo_interes = self._Cuenta__saldo * self.interes
+
+        # Se invoca al metodo .depositar para sumar el interes al saldo
+        self.depositar(calculo_interes)
+        print(f"Interes aplicado: {calculo_interes}")
         return calculo_interes
 
 
