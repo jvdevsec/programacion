@@ -13,6 +13,7 @@ class Libro():  # Clase padre
         self.__autor = autor
         self.__precio = precio
 
+    # Los metodos para acceder al atributo .__precio
     def get_precio(self):
         return self.__precio
 
@@ -26,6 +27,14 @@ class LibroDigital(Libro):
         super().__init__(titulo, autor, precio)
 
     def aplicar_descuento(self, valor_descuento):
+        """
+        En este metodo por medio del bucle y los condicionales se verifica
+        la respuesta del usuario para validar si se trata de un libro fisico
+        o digital. A partir de esto se aplica el descuento del 25%.
+
+        El bloque try-catch maneja los errores al interrumpir la ejecucion
+        del programa
+        """
         while True:
             try:
                 # el metodo strip() elimina los espacios en blanco
@@ -41,6 +50,7 @@ class LibroDigital(Libro):
 
                 elif respuesta_usuario == "N":
                     print("El descuento no aplica para libros físicos")
+                    break
 
                 else:
                     print("Entrada no válida, intenta nuevamente.")
@@ -52,7 +62,7 @@ class LibroDigital(Libro):
                 exit()
 
 
-# Ejecucion del programa. Es buena practica usar esta condicion
+# Aqui empieza la jecucion del programa. Es buena practica usar esta condicion
 if __name__ == "__main__":
     libro1 = LibroDigital(None, None, 0)
     libro1.set_precio(55000)
