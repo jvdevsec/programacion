@@ -19,7 +19,7 @@ class Electrodomestico:  # Superclase o clase padre
         print("Maquina apagada")
 
 
-class Lavadora(Electrodomestico):  # Subclases o clases hijas
+class Lavadora(Electrodomestico):  # Subclase Lavadora
     def __init__(self):
         pass
 
@@ -27,7 +27,7 @@ class Lavadora(Electrodomestico):  # Subclases o clases hijas
         print("La lavadora empezo el ciclo de lavado...")
 
 
-class Microondas(Electrodomestico):
+class Microondas(Electrodomestico):  # Subclase Microondas
     def __init__(self):
         pass
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     lavadora = Lavadora()
     lavadora.iniciar_ciclo()
     lavadora.apagar()
-
+    print("")  # Espacio en blanco
     microondas = Microondas()
     microondas.encender()  # Heredo el metodo de la clase padre
     microondas.calentar()
