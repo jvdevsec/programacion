@@ -52,6 +52,7 @@ class LibroDigital(Libro):
                 exit()
 
 
+# Ejecucion del programa. Es buena practica usar esta condicion
 if __name__ == "__main__":
     libro1 = LibroDigital(None, None, 0)
     libro1.set_precio(55000)
