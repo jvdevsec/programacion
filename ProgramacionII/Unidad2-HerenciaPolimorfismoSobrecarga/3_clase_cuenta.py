@@ -19,12 +19,19 @@ class Cuenta():  # Clase padre
         return self.__saldo
 
     def retirar(self, monto: int):
+        """
+        Se valida que no se retire un valor mayor
+        """
+        if monto > self.__saldo:
+            print("No hay fondos suficientes para hacer el retiro (-_-)")
+            return self.__saldo
         self.__saldo -= monto
         print(f"Se han retirado {monto}")
         return self.__saldo
 
     def mostrar_saldo(self):
         print(f"Saldo disponible: {self.__saldo}")
+        return self.__saldo
 
 
 class CuentaAhorro(Cuenta):  # Subclase
