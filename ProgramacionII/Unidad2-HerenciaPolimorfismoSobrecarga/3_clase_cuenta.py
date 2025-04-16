@@ -16,6 +16,7 @@ class Cuenta():  # Clase padre
         Este metodo suma el monto al saldo
         """
         self.__saldo += monto
+        print(f"Se han depositado {monto}")
         return self.__saldo
 
     def retirar(self, monto: int):
@@ -45,21 +46,26 @@ class CuentaAhorro(Cuenta):  # Subclase
         Accede al atributo privado de la clase padre
         'self.__saldo'
         """
-        calculo_interes = self._Cuenta__saldo * self.interes
+        calculo_interes = int(self._Cuenta__saldo * self.interes)
 
-        # Se invoca al metodo .depositar para sumar el interes al saldo
+        # Se invoca al metodo .depositar() para sumar el interes al saldo
         self.depositar(calculo_interes)
-        print(f"Interes aplicado: {calculo_interes}")
-        return calculo_interes
+        print(f"Total intereses: {calculo_interes}")
+        return self._Cuenta__saldo  # Retorna el saldo actualizado
 
 
 if __name__ == "__main__":
     print("--Cuenta de Banco--")
     cuenta1 = CuentaAhorro(saldo=1080900, interes=0.06)
-    cuenta1.depositar(50)
+    # Nota: descomentar la linea de codigo para verificar el metodo
+    # .depositar():
+    # cuenta1.depositar(100000)
     cuenta1.mostrar_saldo()
     # Retiro del valor
     cuenta1.retirar(300000)
+    print("")
+    cuenta1.mostrar_saldo()  # Se llama nuevamente al metodo para ver el saldo
 
-    cuenta1.aplicar_interes()
-    print(f"Saldo con interes del 6%: {cuenta1.mostrar_saldo()}")
+    # Se declara una variable para llamar al metodo
+    saldo_con_interes = cuenta1.aplicar_interes()
+    print(f"Saldo con interes del 6%: {(saldo_con_interes)}")
