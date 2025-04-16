@@ -38,10 +38,10 @@ class Microondas(Electrodomestico):
 # Ejecucion del programa
 if __name__ == "__main__":
     print("--ELectrodomesticos--")
-    electrodomestico1 = Lavadora()
-    electrodomestico1.iniciar_ciclo()
-    electrodomestico1.apagar()
+    lavadora = Lavadora()
+    lavadora.iniciar_ciclo()
+    lavadora.apagar()
 
-    electrodomestico2 = Microondas()
-    electrodomestico2.encender()  # Heredo el metodo de la clase padre
-    electrodomestico2.calentar()
+    microondas = Microondas()
+    microondas.encender()  # Heredo el metodo de la clase padre
+    microondas.calentar()
