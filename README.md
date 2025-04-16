@@ -39,4 +39,4 @@ implementación de clases, abstracción y encapsulamiento.
 2. Construir soluciones flexibles y escalables mediante el uso de los
 principios de herencia, polimorfismo y sobrecarga, con el objetivo de
 mejorar la reutilización de código y facilitar la extensión de
-funcionalidades en entornos orientados a objetos
+funcionalidades en entornos orientados a objetos.
