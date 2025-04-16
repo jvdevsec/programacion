@@ -31,6 +31,7 @@ class Cuenta():  # Clase padre
 
     def mostrar_saldo(self):
         print(f"Saldo disponible: {self.__saldo}")
+        # Se retorna el saldo para usarlo en otra(s) operacion(es)
         return self.__saldo
 
 
