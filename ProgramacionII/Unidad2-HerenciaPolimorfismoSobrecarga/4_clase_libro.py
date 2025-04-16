@@ -41,7 +41,6 @@ class LibroDigital(Libro):
 
                 elif respuesta_usuario == "N":
                     print("El descuento no aplica para libros físicos")
-                    return self.get_precio()
 
                 else:
                     print("Entrada no válida, intenta nuevamente.")
