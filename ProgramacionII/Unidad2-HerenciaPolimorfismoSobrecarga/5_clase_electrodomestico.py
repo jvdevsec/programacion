@@ -11,9 +11,9 @@ class Electrodomestico:  # Superclase o clase padre
 
     def __init__(self):
         """
-        Por simplicidad no se agregaron metodos a la clase base.
-        la palabra clave pass actua como "placeholder" ya que no
-        se definieron atributos para la clase
+        Por simplicidad no se agregaron atributos a la clase base.
+        la palabra clave pass actua como "placeholder" para
+        codigo futuro
         """
         pass
 
