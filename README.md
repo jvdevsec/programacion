@@ -30,8 +30,13 @@ Desarrollar la capacidad de diseñar soluciones básicas de programación utiliz
 
 </div>
 
-### Objetivo
+### Objetivos
 
-Reconocer los elementos fundantes del paradigma de programación
+1. Reconocer los elementos fundamentales del paradigma de programación
 orientada a objetos a fin de afianzar conceptos relacionados con la
 implementación de clases, abstracción y encapsulamiento.
+
+2. Construir soluciones flexibles y escalables mediante el uso de los
+principios de herencia, polimorfismo y sobrecarga, con el objetivo de
+mejorar la reutilización de código y facilitar la extensión de
+funcionalidades en entornos orientados a objetos
