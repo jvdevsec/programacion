@@ -6,10 +6,9 @@ específicos (iniciar_ciclo() para Lavadora y calentar() para
 Microondas).
 """
 
-# Superclase o clase padre
 
+class Electrodomestico:  # Superclase o clase padre
 
-class Electrodomestico:
     def __init__(self):
         pass
 
@@ -19,10 +18,8 @@ class Electrodomestico:
     def apagar(self):
         print("Maquina apagada")
 
-# Subclases o clases hijas
 
-
-class Lavadora(Electrodomestico):
+class Lavadora(Electrodomestico):  # Subclases o clases hijas
     def __init__(self):
         pass
 
@@ -38,6 +35,13 @@ class Microondas(Electrodomestico):
         print("EL microondas calienta la comida a 80° Celsius...")
 
 
+# Ejecucion del programa
 if __name__ == "__main__":
+    print("--ELectrodomesticos--")
     electrodomestico1 = Lavadora()
     electrodomestico1.iniciar_ciclo()
+    electrodomestico1.apagar()
+
+    electrodomestico2 = Microondas()
+    electrodomestico2.encender()  # Heredo el metodo de la clase padre
+    electrodomestico2.calentar()
