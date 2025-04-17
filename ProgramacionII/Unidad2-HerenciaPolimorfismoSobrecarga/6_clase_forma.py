@@ -25,7 +25,7 @@ class Forma:  # Clase padre
 
 class Triangulo(Forma):
     def __init__(self, longitud_lados, base, altura):
-        self.__numero_lados = 3  # Un triangulo tiene 3 lados
+        self.__numero_lados = 3
         self.__longitud_lados = longitud_lados
         # Se agregaron estos 2 atributos para calcular el area
         self.__base = base
@@ -47,6 +47,13 @@ class Triangulo(Forma):
         """
         # Perimetro -> 3 * longitud
         return self.__numero_lados * self.__longitud_lados
+
+
+class Pentagono(Forma):
+    def __init__(self, longitud_lados, apotema):
+        self.__numero_lados = 5
+        self.__longitud_lados = longitud_lados
+        self.__apotema = apotema  # para calcular el area de poligonos
 
 
 if __name__ == "__main__":
