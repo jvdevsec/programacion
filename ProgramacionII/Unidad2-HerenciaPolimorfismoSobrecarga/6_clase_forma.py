@@ -34,7 +34,7 @@ class Triangulo(Forma):
     def area(self):
         """
         Metodo para acceder a los atributos encapsulados
-        .__base y .__altura y realizar el calculo del area  del triangulo.
+        .__base y .__altura y realizar el calculo del area del triangulo.
         """
 
         return (self.__base * self.__altura) / 2  # Formula para el area
@@ -54,6 +54,14 @@ class Pentagono(Forma):
         self.__numero_lados = 5
         self.__longitud_lados = longitud_lados
         self.__apotema = apotema  # para calcular el area de poligonos
+
+    def perimetro(self):
+        """
+        Metodo para el calculo del perimetro con implementacion
+        propia de la clase Pentagono.
+        """
+        # Perimetro -> 5 * longitud
+        return self.__numero_lados * self.__longitud_lados
 
 
 if __name__ == "__main__":
