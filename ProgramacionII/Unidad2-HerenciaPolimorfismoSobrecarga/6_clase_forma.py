@@ -7,7 +7,12 @@ para el número de lados y la longitud de cada lado.
 """
 
 
-class Forma:
+class Forma:  # Clase padre
+    """
+    Por simplicidad se declaro la clase como
+    vacia (sin atributos).
+    """
+
     def __init__(self):
         pass
 
@@ -20,17 +25,28 @@ class Forma:
 
 class Triangulo(Forma):
     def __init__(self, longitud_lados, base, altura):
-        self.__numero_lados = 3  # Un triingulo siempre tiene 3 lados
+        self.__numero_lados = 3  # Un triangulo tiene 3 lados
         self.__longitud_lados = longitud_lados
         # Se agregaron estos 2 atributos para calcular el area
         self.__base = base
         self.__altura = altura
 
-    def area(self, base, altura):
-        return base * altura
+    def area(self):
+        """
+        Metodo para acceder a los atributos encapsulados
+        .__base y .__altura y realizar el calculo del area  del triangulo.
+        """
+
+        return (self.__base * self.__altura) / 2  # Formula para el area
 
     def perimetro(self):
-        return self.__numero_lados * self.__longitud
+        """
+        Metodo para calcular el perimetro, es la suma de cada lado.
+        se puede simplificar multiplicando el numero de lados por
+        la longitud.
+        """
+        # Perimetro -> 3 * longitud
+        return self.__numero_lados * self.__longitud_lados
 
 
 if __name__ == "__main__":
