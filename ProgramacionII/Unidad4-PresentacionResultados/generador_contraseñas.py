@@ -14,7 +14,7 @@ minúscula y un carácter especial de la siguiente lista: ¿¡?=)(/¨*+-
 decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
-import random
+from random import choice
 import array
 
 class Contraseña:
@@ -75,10 +75,10 @@ class Contraseña:
 
         # con el modulo random se selecciona al menos un caracter de 
         # forma aleatoria -> método choice()
-        digito_aleatorio = random.choice(numeros)
-        mayuscula_aleatoria = random.choice(mayusculas)
-        minuscula_aleatoria = random.choice(minusculas)
-        simbolo_aleatorio = random.choice(caracteres_especiales)
+        digito_aleatorio = choice(numeros)
+        mayuscula_aleatoria = choice(mayusculas)
+        minuscula_aleatoria = choice(minusculas)
+        simbolo_aleatorio = choice(caracteres_especiales)
 
         contraseña_temporal = digito_aleatorio + mayuscula_aleatoria + minuscula_aleatoria + simbolo_aleatorio
         # print(contraseña_temporal) -> testeo
