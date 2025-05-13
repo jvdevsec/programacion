@@ -18,6 +18,11 @@ from random import choice
 import array
 
 class Contraseña:
+    """
+    Clase para crear la contraseña de acuerdo con los 
+    requerimientos. El atributo caracteres es para
+    el almacenamiento de esta.
+    """
     def __init__(self, longitud):
         self.longitud = longitud
         self.caracteres = None
@@ -99,7 +104,7 @@ def main():
     """
     Método principal, lógica de ejecución del programa
     """
-    ContraseñaSegura = Contraseña(None, None)
+    ContraseñaSegura = Contraseña(None)
     ContraseñaSegura.ingresar_longitud()
     ContraseñaSegura.combinar_caracteres()
     # TODO: llamar al método generar_contraseñas()
