@@ -78,7 +78,8 @@ class Contraseña:
         # print(contraseña_temporal) -> testeo
         return contraseña_temporal
     
-    
+    def generar_contraseñas(contraseña_temporal):
+        pass
 
         
 
