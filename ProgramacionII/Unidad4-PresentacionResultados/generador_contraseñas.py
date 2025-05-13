@@ -64,7 +64,7 @@ class Contraseña:
                      'Z']
         
         # Se combinan todos los caracteres de las listas para formar
-        # una sola contraseña
+        # una lista única 
         self.caracteres = numeros + caracteres_especiales + minusculas + mayusculas
 
         # con el modulo random se selecciona al menos un caracter de 
@@ -74,11 +74,13 @@ class Contraseña:
         minuscula_aleatoria = random.choice(minusculas)
         simbolo_aleatorio = random.choice(caracteres_especiales)
 
+        contraseña_temporal = digito_aleatorio + mayuscula_aleatoria + minuscula_aleatoria + simbolo_aleatorio
+        # print(contraseña_temporal) -> testeo
+        return contraseña_temporal
+    
+    
 
-
-
-
-
+        
 
 
 
@@ -90,6 +92,7 @@ def main():
     """
     ContraseñaSegura = Contraseña(None, None)
     ContraseñaSegura.longitud_contraseña()
+    ContraseñaSegura.combinar_caracteres()
 
 if __name__ == "__main__":
     print("Testing...")
