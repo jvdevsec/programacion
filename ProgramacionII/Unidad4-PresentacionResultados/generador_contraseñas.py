@@ -46,6 +46,12 @@ class Contraseña:
                 break
     
     def combinar_caracteres(self):
+        """
+        Metodo para combinar los caracteres almacenados 
+        en las listas. Se usa la función choice() que
+        selecciona un elemento de la lista de forma
+        aleatoria para cada tipo de caracter.
+        """
         # Listas/arreglos para los caracteres de nuestra contraseña
         numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
@@ -79,13 +85,15 @@ class Contraseña:
         return contraseña_temporal
     
     def generar_contraseñas(contraseña_temporal):
+        """
+        Metodo para generar contraseñas. Se usa un ciclo for
+        para iterar hasta el máximo de caracteres definido 
+        por el usuario
+        """
+        # TODO: declarar el bucle for
         pass
 
-        
-
-
-
-
+# método estatico (no retorna ningun valor)
 @staticmethod
 def main():
     """
@@ -94,9 +102,9 @@ def main():
     ContraseñaSegura = Contraseña(None, None)
     ContraseñaSegura.longitud_contraseña()
     ContraseñaSegura.combinar_caracteres()
+    # TODO: llamar al método generar_contraseñas()
 
 if __name__ == "__main__":
-    print("Testing...")
     main()
 
 
