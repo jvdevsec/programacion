@@ -18,11 +18,11 @@ from random import choice
 import array
 
 class Contraseña:
-    def __init__(self, longitud, password):
+    def __init__(self, longitud):
         self.longitud = longitud
-        self.caracteres = []
+        self.caracteres = None
 
-    def longitud_contraseña(self):
+    def ingresar_longitud(self):
         """
         Método para ingresar la longitud de la contraseña 
         minimo 8 caracteres, máximo 128. 
@@ -100,7 +100,7 @@ def main():
     Método principal, lógica de ejecución del programa
     """
     ContraseñaSegura = Contraseña(None, None)
-    ContraseñaSegura.longitud_contraseña()
+    ContraseñaSegura.ingresar_longitud()
     ContraseñaSegura.combinar_caracteres()
     # TODO: llamar al método generar_contraseñas()
 
