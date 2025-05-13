@@ -17,12 +17,44 @@ decir, sin un orden específico.
 import secrets 
 import random
 
-class ContraseñaSegura():
+class ContraseñaSegura:
     def __init__(self, longitud, password):
         self.longitud = longitud
         self.password = password
 
+def longitud_contraseña():
+    """
+    Método para ingresar la longitud de la contraseña 
+    minimo 8 caracteres, máximo 128. 
+    Me base en un gestor de contraseñas (bitwarden) 
+    para definir el tope de caracteres.
+    """
+    while (True):
+        try:
+            longitud = int(input("Ingresa la longitud de la contraseña (minimo 8): "))
+            if longitud <8:
+                print("La contraseña debe tener mínimo 8 caracteres")
+            elif longitud >128:
+                print("No se puede sobrepasar el máximo de caracteres")
+            else:
+                return longitud
+        # Manejo de errores
+        except ValueError:
+            print("\nSolo se permiten valores númericos intenta nuevamente")
+        except KeyboardInterrupt:
+            print("\n\nPrograma interrumpido por el usuario\n")
+            break
+
+
+@staticmethod
+def main():
+    """
+    Método principal, lógica de ejecución del programa
+    """
+    longitud_contraseña()
+
 if __name__ == "__main__":
     print("Testing...")
+    main()
 
 
