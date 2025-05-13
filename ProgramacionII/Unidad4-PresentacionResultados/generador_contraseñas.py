@@ -20,8 +20,8 @@ import array
 class Contraseña:
     """
     Clase para crear la contraseña de acuerdo con los 
-    requerimientos. El atributo caracteres es para
-    el almacenamiento de esta.
+    requerimientos. El atributo 'caracteres' es para
+    el almacenamiento de la contraseña.
     """
     def __init__(self, longitud):
         self.longitud = longitud
