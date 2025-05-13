@@ -38,15 +38,15 @@ class Contraseña:
                     print("No se puede sobrepasar el máximo de caracteres")
                 else:
                     return self.longitud
-                # Manejo de errores
+             # Manejo de errores
             except ValueError:
                 print("\nSolo se permiten valores númericos intenta nuevamente")
             except KeyboardInterrupt:
                 print("\n\nPrograma interrumpido por el usuario\n")
                 break
     
-    def generar_contraseña(self):
-        # Arreglos 
+    def combinar_caracteres(self):
+        # Listas/arreglos para los caracteres de nuestra contraseña
         numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
         caracteres_especiales = ['¿','¡','?','=',')','(', '/', 
@@ -62,7 +62,25 @@ class Contraseña:
                      'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q',
                      'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
                      'Z']
-        pass
+        
+        # Se combinan todos los caracteres de las listas para formar
+        # una sola contraseña
+        self.caracteres = numeros + caracteres_especiales + minusculas + mayusculas
+
+        # con el modulo random se selecciona al menos un caracter de 
+        # forma aleatoria -> método choice()
+        digito_aleatorio = random.choice(numeros)
+        mayuscula_aleatoria = random.choice(mayusculas)
+        minuscula_aleatoria = random.choice(minusculas)
+        simbolo_aleatorio = random.choice(caracteres_especiales)
+
+
+
+
+
+
+
+
 
 
 @staticmethod
