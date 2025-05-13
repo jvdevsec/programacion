@@ -14,11 +14,10 @@ minúscula y un carácter especial de la siguiente lista: ¿¡?=)(/¨*+-
 decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
-
-import secrets
+import secrets 
 import random
 
-class GeneradorContraseña():
+class ContraseñaSegura():
     def __init__(self, longitud, password):
         self.longitud = longitud
         self.password = password
