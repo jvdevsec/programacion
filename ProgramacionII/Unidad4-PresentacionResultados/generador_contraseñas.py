@@ -14,36 +14,55 @@ minúscula y un carácter especial de la siguiente lista: ¿¡?=)(/¨*+-
 decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
-import secrets 
 import random
+import array
 
-class ContraseñaSegura:
+class Contraseña:
     def __init__(self, longitud, password):
         self.longitud = longitud
-        self.password = password
+        self.caracteres = []
 
-def longitud_contraseña():
-    """
-    Método para ingresar la longitud de la contraseña 
-    minimo 8 caracteres, máximo 128. 
-    Me base en un gestor de contraseñas (bitwarden) 
-    para definir el tope de caracteres.
-    """
-    while (True):
-        try:
-            longitud = int(input("Ingresa la longitud de la contraseña (minimo 8): "))
-            if longitud <8:
-                print("La contraseña debe tener mínimo 8 caracteres")
-            elif longitud >128:
-                print("No se puede sobrepasar el máximo de caracteres")
-            else:
-                return longitud
-        # Manejo de errores
-        except ValueError:
-            print("\nSolo se permiten valores númericos intenta nuevamente")
-        except KeyboardInterrupt:
-            print("\n\nPrograma interrumpido por el usuario\n")
-            break
+    def longitud_contraseña(self):
+        """
+        Método para ingresar la longitud de la contraseña 
+        minimo 8 caracteres, máximo 128. 
+        Me base en un gestor de contraseñas (bitwarden) 
+        para definir el tope de caracteres.
+        """
+        while (True):
+            try:
+                self.longitud = int(input("Ingresa la longitud de la contraseña (minimo 8): "))
+                if self.longitud <8:
+                    print("La contraseña debe tener mínimo 8 caracteres")
+                elif self.longitud >128:
+                    print("No se puede sobrepasar el máximo de caracteres")
+                else:
+                    return self.longitud
+                # Manejo de errores
+            except ValueError:
+                print("\nSolo se permiten valores númericos intenta nuevamente")
+            except KeyboardInterrupt:
+                print("\n\nPrograma interrumpido por el usuario\n")
+                break
+    
+    def generar_contraseña(self):
+        # Arreglos 
+        numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+        caracteres_especiales = ['¿','¡','?','=',')','(', '/', 
+                                 '¨', '*', '+', '-', '%', '&'
+                                 '*', '$','#','!']
+
+        minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 
+                      'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q',
+                      'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+                      'z']
+        
+        mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
+                     'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q',
+                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+                     'Z']
+        pass
 
 
 @staticmethod
@@ -51,7 +70,8 @@ def main():
     """
     Método principal, lógica de ejecución del programa
     """
-    longitud_contraseña()
+    ContraseñaSegura = Contraseña(None, None)
+    ContraseñaSegura.longitud_contraseña()
 
 if __name__ == "__main__":
     print("Testing...")
