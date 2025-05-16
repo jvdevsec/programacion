@@ -101,7 +101,14 @@ class Contraseña:
         al usar el tipo de codificación 'u' en el método .array().
         Ya no es necesario tampoco el modulo 'array' 
         """
-        
+        # Se convierte a lista con la función list()
+        caracteres = list(contraseña_temporal)
+        # Se mezcla (shuffle) y se convierte a tipo string
+        shuffle(caracteres)
+        contrasena = ''.join(caracteres)
+
+    
+
         
      
 def main():
