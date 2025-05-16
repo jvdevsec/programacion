@@ -14,7 +14,7 @@ minúscula y un carácter especial de la siguiente lista: ¿¡?=)(/¨*+-
 decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
-from random import choice
+from random import choice, shuffle
 import array
 
 class Contraseña:
@@ -89,15 +89,23 @@ class Contraseña:
         # print(contraseña_temporal) -> testeo
         return contraseña_temporal
     
-    def generar_contraseñas(contraseña_temporal):
+    def generar_contraseñas(self, contraseña_temporal):
         """
         Metodo para generar contraseñas. Se usa un ciclo for
         para iterar hasta el máximo de caracteres definido 
         por el usuario
         """
-        # TODO: declarar el bucle for
-        pass
+        for x in range(self.longitud):
+            contraseña_temporal += choice(self.caracteres)
 
+            contraseña_temporal_lista = array.array("u",contraseña_temporal)
+            shuffle(contraseña_temporal_lista)
+
+            contrasena = ""
+        for x in contraseña_temporal_lista:
+            contrasena += x
+        print(f"Contraseña generada: {contrasena}")
+     
 def main():
     """
     Método principal, lógica de ejecución del programa
@@ -106,6 +114,7 @@ def main():
     ContraseñaSegura.ingresar_longitud()
     ContraseñaSegura.combinar_caracteres()
     # TODO: llamar al método generar_contraseñas()
+    ContraseñaSegura.generar_contraseñas('')
 
 if __name__ == "__main__":
     main()
