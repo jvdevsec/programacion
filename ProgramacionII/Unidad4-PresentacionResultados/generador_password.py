@@ -15,7 +15,7 @@ decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
 from random import choice, shuffle
-import array
+from array import array
 
 class Contraseña:
     """
@@ -98,13 +98,14 @@ class Contraseña:
         for x in range(self.longitud):
             contraseña_temporal += choice(self.caracteres)
 
-            contraseña_temporal_lista = array.array("u",contraseña_temporal)
+            contraseña_temporal_lista = array("u",contraseña_temporal)
             shuffle(contraseña_temporal_lista)
 
             contrasena = ""
         for x in contraseña_temporal_lista:
             contrasena += x
-        print(f"Contraseña generada: {contrasena}")
+
+        return contrasena
      
 def main():
     """
@@ -114,7 +115,8 @@ def main():
     ContraseñaSegura.ingresar_longitud()
     ContraseñaSegura.combinar_caracteres()
     # TODO: llamar al método generar_contraseñas()
-    ContraseñaSegura.generar_contraseñas('')
+    contrasena = ContraseñaSegura.generar_contraseñas('')
+    print(contrasena)
 
 if __name__ == "__main__":
     main()
