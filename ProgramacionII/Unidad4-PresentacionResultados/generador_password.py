@@ -89,7 +89,7 @@ class Contraseña:
         # print(contraseña_temporal) -> testeo
         return contraseña_temporal
     
-    def generar_contraseñas(self, contraseña_temporal):
+    def generar_contraseña(self, contraseña_temporal):
         """
         Metodo para generar contraseñas. Se usa un ciclo for
         para iterar hasta el máximo de caracteres definido 
@@ -111,12 +111,16 @@ def main():
     """
     Método principal, lógica de ejecución del programa
     """
+    print("---GENERADOR DE CONTRASEÑAS--- ")
+    print("Genera contraseñas aleatorias de hasta 128 caracteres!")
+    print("Entre más caracteres más seguridad y fuerte contra el brute forcing\n")
+    # Instancia de la clase Contraseña
     ContraseñaSegura = Contraseña(None)
     ContraseñaSegura.ingresar_longitud()
     ContraseñaSegura.combinar_caracteres()
-    # TODO: llamar al método generar_contraseñas()
-    contrasena = ContraseñaSegura.generar_contraseñas('')
-    print(contrasena)
+    contrasena = ContraseñaSegura.generar_contraseña('')
+    # Salida
+    print(f"Contraseña generada: {contrasena}")
 
 if __name__ == "__main__":
     main()
