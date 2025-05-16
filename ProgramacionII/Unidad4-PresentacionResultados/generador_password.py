@@ -111,7 +111,7 @@ def main():
     """
     Método principal, lógica de ejecución del programa
     """
-    print("---GENERADOR DE CONTRASEÑAS--- ")
+    print("---GENERADOR DE CONTRASEÑAS--- ¯\_(ツ)_/¯ ")
     print("Genera contraseñas aleatorias de hasta 128 caracteres!")
     print("Entre más caracteres más seguridad y fuerte contra el brute forcing\n")
     # Instancia de la clase Contraseña
