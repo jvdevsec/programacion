@@ -23,7 +23,7 @@ class Contraseña:
     requerimientos. El atributo 'caracteres' es para
     el almacenamiento de la contraseña.
     """
-    def __init__(self, longitud):
+    def __init__(self, longitud:int):
         self.longitud = longitud
         self.caracteres = None
 
@@ -49,7 +49,10 @@ class Contraseña:
             except KeyboardInterrupt:
                 print("\n\nPrograma interrumpido por el usuario\n")
                 break
-    
+            except EOFError:
+                print("\n\nPrograma interrumpido por el usuario\n")
+                break
+
     def combinar_caracteres(self):
         """
         Metodo para combinar los caracteres almacenados 
@@ -91,27 +94,21 @@ class Contraseña:
     
     def generar_contraseña(self, contraseña_temporal):
         """
-        Metodo para generar contraseñas. Se usa un ciclo for
-        para iterar hasta el máximo de caracteres definido 
-        por el usuario
+        FIXED
+        Genera contraseñas mezclando los caracteres combinados
+        y completa hasta la longitud ingresada por el usuario
+        -> hice esta corrección ya que había un error de obsolencia
+        al usar el tipo de codificación 'u' en el método .array().
+        Ya no es necesario tampoco el modulo 'array' 
         """
-        for x in range(self.longitud):
-            contraseña_temporal += choice(self.caracteres)
-
-            contraseña_temporal_lista = array("u",contraseña_temporal)
-            shuffle(contraseña_temporal_lista)
-
-            contrasena = ""
-        for x in contraseña_temporal_lista:
-            contrasena += x
-
-        return contrasena
+        
+        
      
 def main():
     """
     Método principal, lógica de ejecución del programa
     """
-    print("---GENERADOR DE CONTRASEÑAS--- ¯\_(ツ)_/¯ ")
+    print("---GENERADOR DE CONTRASEÑAS--- (ツ)")
     print("Genera contraseñas aleatorias de hasta 128 caracteres!")
     print("Entre más caracteres más seguridad y fuerte contra el brute forcing\n")
     # Instancia de la clase Contraseña
