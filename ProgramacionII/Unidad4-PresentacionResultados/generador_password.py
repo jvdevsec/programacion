@@ -42,15 +42,16 @@ class Contraseña:
                     print("No se puede sobrepasar el máximo de caracteres")
                 else:
                     return self.longitud
+                    break
              # Manejo de errores
             except ValueError:
                 print("\nSolo se permiten valores númericos intenta nuevamente")
             except KeyboardInterrupt:
                 print("\n\nPrograma interrumpido por el usuario\n")
-                break
+                exit()
             except EOFError:
                 print("\n\nPrograma interrumpido por el usuario\n")
-                break
+                exit()
 
     def combinar_caracteres(self):
         """
