@@ -105,12 +105,18 @@ class Contraseña:
         caracteres = list(contraseña_temporal)
         # Se mezcla (shuffle) y se convierte a tipo string
         shuffle(caracteres)
+        # Se concatenan los caracteres a la variable ¿contrasena'
         contrasena = ''.join(caracteres)
 
+        # Se va generando la contraseña hasta alcanzar la longitud necesaria
+        # Mientras el número de caracteres almacenados sea menor a la 
+        # longitud ingresada
+        while len(contrasena) < self.longitud:
+            # choice() selecciona aleatoriamente los elementos
+            contrasena += choice(self.caracteres)
     
+        return contrasena
 
-        
-     
 def main():
     """
     Método principal, lógica de ejecución del programa
