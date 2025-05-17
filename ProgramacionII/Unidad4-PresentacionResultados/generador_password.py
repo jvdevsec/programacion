@@ -15,7 +15,6 @@ decir, sin un orden específico.
 """
 # Modulos necesarios para generar las contraseñas aleatorias
 from random import choice, shuffle
-from array import array
 
 class Contraseña:
     """
