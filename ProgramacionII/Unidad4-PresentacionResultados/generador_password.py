@@ -119,7 +119,8 @@ class Contraseña:
 
 def main():
     """
-    Método principal, lógica de ejecución del programa
+    Función principal, lógica de ejecución del programa
+    
     """
     print("---GENERADOR DE CONTRASEÑAS--- (ツ)")
     print("Genera contraseñas aleatorias de hasta 128 caracteres!")
@@ -131,7 +132,20 @@ def main():
     contrasena = ContraseñaSegura.generar_contraseña('')
     # Salida
     print(f"Contraseña generada: {contrasena}")
-
+    # TODO: Preguntar al usuario si desea generar una nueva contraseña
+    # Se debe agregar un bucle a la lógica
+    respuesta_usuario = input("\n¿Desea generar otra contraseña? s/n: ").strip()
+    if respuesta_usuario == 's':
+        # Se llama nuevamente a los métodos
+        ContraseñaSegura.ingresar_longitud()
+        ContraseñaSegura.combinar_caracteres()
+        contrasena = ContraseñaSegura.generar_contraseña('')
+        print(f"Contraseña generada: {contrasena}")
+        # main()
+    elif respuesta_usuario == 'n':
+        exit() # Sale abruptamente del programa
+    else:
+        print("Por favor ingresa una respuesta válida")
 if __name__ == "__main__":
     main()
 
