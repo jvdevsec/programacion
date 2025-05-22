@@ -132,20 +132,28 @@ def main():
     contrasena = ContraseñaSegura.generar_contraseña('')
     # Salida
     print(f"Contraseña generada: {contrasena}")
-    # TODO: Preguntar al usuario si desea generar una nueva contraseña
-    # Se debe agregar un bucle a la lógica
-    respuesta_usuario = input("\n¿Desea generar otra contraseña? s/n: ").strip()
-    if respuesta_usuario == 's':
-        # Se llama nuevamente a los métodos
-        ContraseñaSegura.ingresar_longitud()
-        ContraseñaSegura.combinar_caracteres()
-        contrasena = ContraseñaSegura.generar_contraseña('')
-        print(f"Contraseña generada: {contrasena}")
-        # main()
-    elif respuesta_usuario == 'n':
-        exit() # Sale abruptamente del programa
-    else:
-        print("Por favor ingresa una respuesta válida")
+    # Se pregunta nuevamente al usuario si desea generar una nueva contraseña
+    while True:
+        try:
+            # Validación de entrada concisa - acepta s,S,n y N como respuesta
+            # el método upper() convierte a mayúscula
+            respuesta_usuario = input("\n¿Desea generar otra contraseña? (s/n): ").upper()
+            if respuesta_usuario == 'S':
+                # Se llama nuevamente a los métodos
+                ContraseñaSegura.ingresar_longitud()
+                ContraseñaSegura.combinar_caracteres()
+                contrasena = ContraseñaSegura.generar_contraseña('')
+                print(f"Contraseña generada: {contrasena}")
+            elif respuesta_usuario == 'N':
+                print("Ejecución terminada...")
+                break
+            else:
+                print("Entrada no válida. Intente nuevamente")
+
+        except (KeyboardInterrupt, EOFError):
+            print("\nEjecución del programa terminada. Saliendo del programa\n")
+            exit() # Salida abrupta del programa
+            
 if __name__ == "__main__":
     main()
 
