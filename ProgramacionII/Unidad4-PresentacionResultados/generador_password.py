@@ -46,13 +46,10 @@ class Contraseña:
              # Manejo de errores
             except ValueError:
                 print("\nSolo se permiten valores númericos intenta nuevamente")
-            except KeyboardInterrupt:
+            except (KeyboardInterrupt, EOFError):
                 print("\n\nPrograma interrumpido por el usuario\n")
                 exit()
-            except EOFError:
-                print("\n\nPrograma interrumpido por el usuario\n")
-                exit()
-
+                
     def combinar_caracteres(self):
         """
         Metodo para combinar los caracteres almacenados 
@@ -153,7 +150,7 @@ def main():
         except (KeyboardInterrupt, EOFError):
             print("\nEjecución del programa terminada. Saliendo del programa\n")
             exit() # Salida abrupta del programa
-            
+
 if __name__ == "__main__":
     main()
 
