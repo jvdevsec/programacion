@@ -117,7 +117,6 @@ class Contraseña:
 def main():
     """
     Función principal, lógica de ejecución del programa
-    
     """
     print("---GENERADOR DE CONTRASEÑAS--- (ツ)")
     print("Genera contraseñas aleatorias de hasta 128 caracteres!")
