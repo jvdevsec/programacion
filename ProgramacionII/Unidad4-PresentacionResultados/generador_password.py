@@ -102,7 +102,7 @@ class Contraseña:
         caracteres = list(contraseña_temporal)
         # Se mezcla (shuffle) y se convierte a tipo string
         shuffle(caracteres)
-        # Se concatenan los caracteres a la variable ¿contrasena'
+        # Se concatenan los caracteres a la variable contrasena'
         contrasena = ''.join(caracteres)
 
         # Se va generando la contraseña hasta alcanzar la longitud necesaria
